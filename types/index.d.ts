@@ -10,7 +10,6 @@ interface Props {
   loadRecaptchaScript?: boolean
   recaptchaScriptId?: string
   recaptchaHost?: string
-  language?: string
 }
 
 declare class VueRecaptcha extends Vue {
