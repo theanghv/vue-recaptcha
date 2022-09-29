@@ -34,11 +34,7 @@ export default defineComponent({
     },
     recaptchaHost: {
       type: String,
-      default: 'www.google.com',
-    },
-    language: {
-      type: String,
-      default: '',
+      default: 'challenges.cloudflare.com/turnstile/v0/api.js',
     },
   },
   emits: ['render', 'verify', 'expired', 'error'],
@@ -65,7 +61,7 @@ export default defineComponent({
           // Note: vueRecaptchaApiLoaded load callback name is per the latest documentation
           const script = document.createElement('script')
           script.id = props.recaptchaScriptId
-          script.src = `https://${props.recaptchaHost}/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit&hl=${props.language}`
+          script.src = `https://${props.recaptchaHost}?onload=vueRecaptchaApiLoaded&render=explicit`
           script.async = true
           script.defer = true
 
