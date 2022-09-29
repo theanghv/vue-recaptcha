@@ -24,7 +24,7 @@
     "vue",
     "component",
     "vue-component",
-    "turnstile",
+    "turnstile"
   ],
   "workspaces": [
     ".",
