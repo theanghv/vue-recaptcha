@@ -1,10 +1,10 @@
 {
-  "name": "vue-recaptcha",
-  "version": "2.0.3",
-  "description": "ReCAPTCHA vue component",
+  "name": "vue-turnstile",
+  "version": "1.0.2",
+  "description": "Turnstile vue component",
   "types": "types/index.d.ts",
-  "module": "dist/vue-recaptcha.es.js",
-  "main": "dist/vue-recaptcha.js",
+  "module": "dist/vue-turnstile.es.js",
+  "main": "dist/vue-turnstile.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -24,8 +24,7 @@
     "vue",
     "component",
     "vue-component",
-    "google-recaptcha",
-    "recaptcha"
+    "turnstile",
   ],
   "workspaces": [
     ".",
@@ -33,10 +32,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/DanSnow/vue-recaptcha.git"
+    "url": "https://github.com/theanghv/vue-turnstile.git"
   },
   "bugs": {
-    "url": "https://github.com/DanSnow/vue-recaptcha/issues"
+    "url": "https://github.com/theanghv/vue-turnstile/issues"
   },
   "peerDependencies": {
     "@vue/composition-api": "^1.0.0-beta.1",
